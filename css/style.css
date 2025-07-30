@@ -7,10 +7,8 @@
 body {
   background-color: rgba(250, 250, 250, 1);
 }
-.card-parent {
-  height: 100vh;
-}
-.card-parent .heading {
+
+.heading {
   margin-top: 80px;
   margin-bottom: 80px;
   text-align: center;
