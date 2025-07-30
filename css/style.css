@@ -6,11 +6,15 @@
 }
 body {
   background-color: rgba(250, 250, 250, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .heading {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -19,14 +23,112 @@ body {
 }
 .heading h3:nth-child(2) {
   font-weight: 600;
-  color: rgb(79 80 95);
+  color: #4f505f;
 }
 .heading h3:nth-child(1) {
   font-weight: 200;
 }
-p {
+.heading p {
   color: rgb(79 80 95);
   font-size: 12px;
   font-weight: 400;
   margin-top: 10px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 40px;
+  margin-top: 180px;
+}
+.cards .supervisor {
+  border-top: 4px solid #00c8c8;
+  height: 240px;
+  max-width: 400px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border-radius: 6px;
+  position: relative;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  box-shadow: 0px 10px 20px #00000066;
+}
+.cards .supervisor img {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.cards h4 {
+  font-weight: 600;
+  color: #4f505f;
+  margin-bottom: 10px;
+}
+.cards p {
+  font-weight: 400px;
+  color: #4f505f;
+  margin-bottom: 10px;
+  max-width: 350px;
+}
+.cards .team-builder {
+  border-top: 4px solid #ed5355;
+  height: 240px;
+  max-width: 400px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border-radius: 6px;
+  position: relative;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  top: -180px;
+  box-shadow: 0px 10px 20px #00000066;
+}
+.cards .team-builder img {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.cards .karma {
+  border-top: 4px solid #faaf48;
+  height: 240px;
+  max-width: 400px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border-radius: 6px;
+  position: relative;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  box-shadow: 0px 10px 20px #00000066;
+  top: -180px;
+  grid-column: 2 / span 1;
+}
+.cards .karma img {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.cards .calc {
+  border-top: 4px solid #659bd8;
+  max-width: 400px;
+  height: 240px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border-radius: 6px;
+  position: relative;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+
+  box-shadow: 0px 10px 20px #00000066;
+}
+.cards .calc img {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
 }
